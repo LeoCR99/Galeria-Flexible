@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+.caja{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+html{
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.contener{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.estacion{
+    cursor: pointer;
+    position: relative;
+    width: 25vw;
+    height: 100%;
+    outline: solid 5px #fff;
+    overflow: hidden;
+    transition: all .8s;
+    flex-direction: column-reverse;
+    justify-content:space-evenly ;
+}
+section:nth-child(1){
+    background: url("invierno.jpg") fixed center no-repeat;
+    background-size: cover;
+}
+section:nth-child(2){
+    background: url("otoño.jpg") fixed center no-repeat;
+    background-size: cover;
+}
+section:nth-child(3){
+    background: url("primavera.jpg") fixed center no-repeat;
+    background-size: cover;
+}
+section:nth-child(4){
+    background: url("verano.jpg") fixed center no-repeat;
+    background-size: cover;
+}
+#btn-cerrar{
+    cursor: pointer;
+    z-index: 15;
+    position: fixed;
+    font-size: 300%;
+    bottom: 90vh;
+    right: 2vw;
+    color: red;
+    transform: scale(0,0);
+    transition: all .5s;
+}
+#btn-cerrar:hover{
+    color: #fff;
+}
+.estacion .textEstacion{
+    position: relative;
+    color: #fff;
+    text-shadow: 3px 3px 1px #000;
+    font-family: 'Inspiration', cursive;
+    font-size: 500%;
+}
+
